@@ -1,27 +1,5 @@
-Acknowledgement
-
-“Alhamdulillah — all praise and thanks to Allah, who gave me the clarity and power to see this project through to the end.
-To my family, thank you for being my greatest blessing. Your love, prayers, patience and support have been my anchor through every high and low. You believed in me even when I doubted myself, and for that, I am forever grateful.
-This journey wouldn’t have been the same without your presence beside me, and this achievement is just as much yours as it is mine.”
-Mahmoud Hamada
-
-
-
-
-
-
-
-
-
-
-
-
 Abstract
 The Smart-Eye Dairy project is a computer vision-based system designed to enhance safety, quality control, and operational efficiency in dairy production facilities. Using deep learning and real-time video analytics, the system performs multiple critical tasks including: detecting personal protective equipment (PPE) compliance, distinguishing between customers and factory workers, identifying incomplete or underfilled milk bottles on the production line, and recognizing fallen bottles on the factory floor. These functions aim to ensure product consistency, reduce waste, and improve workplace safety. The system leverages models such as YOLOv8 for object detection and is integrated into a modular pipeline that can be adapted to various dairy environments. Smart-Eye Dairy addresses a significant need for automation in factory monitoring and quality assurance through scalable AI technology.
-
-
-
-
 
 
 
@@ -29,46 +7,77 @@ The Smart-Eye Dairy project is a computer vision-based system designed to enhanc
 Table of Contents
 
 Chapter	Page
-Abstract	
+
+Abstract
+
 Table of Contents	
+
 List of Figures	
+
 List of Abbreviations
 
 
 Chapter 1: Introduction………………………………………………………….
+
 1.1 Motivation
+
 1.2 Problem Definition
+
 1.3 Objective
+
 1.4 Document Organization
 
 Chapter 2: Background…………………………………………………………
-           2.1 Field Description
-           2.2 Scientific Background
-           2.3 Survey of Existing Work
-           2.4 Existing similar systems
+
+2.1 Field Description
+	   
+2.2 Scientific Background
+	   
+2.3 Survey of Existing Work
+	   
+2.4 Existing similar systems
 
 Chapter 3: Analysis and Design………………………………………………
+
 3.1 System Overview
+
 3.1.1 System Architecture
+
 3.1.2 Functional Requirements
+
 3.1.3 Nonfunctional Requirements
+
 3.1.4 System Users
+
 3.2 System Analysis & Design
+
 3.2.1 Use Case Diagram
+
 3.2.2 Class Diagram
+
 3.2.3 Sequence Diagrams
 
 
 Chapter 4: Implementation…………………………………………………
-           4.1 Functions descriptions
-           4.2 Techniques and algorithms
-           4.3 Technologies used
+
+4.1 Functions descriptions
+
+4.2 Techniques and algorithms
+
+4.3 Technologies used
+
 Chapter 5: User Manual………………………………………………
-           5.1 How to operate the system
-           5.2 Installation guide
+
+5.1 How to operate the system
+	   
+5.2 Installation guide
+	   
 Chapter 6: Conclusions and Future Work………………………………
+
 6.1 Conclusion
+
 6.2 Future Work
+
 References……………………………………………………………………………	
 
 
@@ -77,13 +86,21 @@ References……………………………………………………………�
 List of Figures
 
 Fig. 3.1	System Architecture	Page	10
+
 Fig. 3.2.1	Use case diagram		
+
 Fig. 3.2.2	Class diagram		
-Fig. 3.2.3	Sequence diagram		
-Fig. 4.3	Technologies used table		
+
+Fig. 3.2.3	Sequence diagram	
+
+Fig. 4.3	Technologies used table	
+
 Fig. 5.1.1	User-interface		
+
 Fig. 5.1.2	PPE detection		
+
 Fig. 5.1.3	Incomplete milk bottle		
+
 Fig. 5.2	System requirements table		
 			
 			
@@ -96,12 +113,19 @@ Fig. 5.2	System requirements table
 
 List of Abbreviations
 •  AI – Artificial Intelligence
+
 •  API – Application Programming Interface
+
 •  CNN – Convolutional Neural Network
+
 •  CV – Computer Vision
+
 •  PPE – Personal Protective Equipment
+
 •  RNN – Recurrent Neural Network
+
 •  UI – User Interface
+
 •  YOLO – You Only Look Once
 
 
@@ -229,8 +253,10 @@ Analysis and Design
 
 3.1	System Overview
 3.1.1 System Architecture
- 
-System Architecture Figure 3.1
+ ![image](https://github.com/user-attachments/assets/31089623-327e-41dc-96aa-c17bb0f57613)
+
+						System Architecture Figure 3.1
+
 The Smart-Eye Dairy system is designed as a real-time computer vision platform composed of modular detection components that process video input and provide actionable alerts to supervisors. The system receives video feeds from cameras placed in production or store areas, processes the frames using trained deep learning models, and returns results to the user interface for monitoring.
 The architecture consists of the following core modules:
 •	Input Module: Captures live video from surveillance cameras installed in the dairy store or production line.
@@ -274,15 +300,18 @@ B. User Characteristics
 This section details the internal structure and interactions of the Smart-Eye Dairy system. It includes diagrams and models that describe how the system functions, how users interact with it, and how data is processed internally.
 
 3.2.1 Use Case Diagram
- 
-Use case diagram figure 3.2.1
+ ![image](https://github.com/user-attachments/assets/06862912-2f04-43df-9b52-19e1cb9e74ad)
+
+						Use case diagram figure 3.2.1
 3.2.2 Class Diagram
- 
-Class diagram figure 3.2.2
+ ![image](https://github.com/user-attachments/assets/aecaea36-5071-4860-bcab-be6886c9ca08)
+
+						Class diagram figure 3.2.2
 
 3.2.3 Sequence Diagrams
- 
-Sequence diagram figure 3.2.3
+ ![image](https://github.com/user-attachments/assets/12c30871-3eab-4034-8ddf-78cc336a15e7)
+
+						Sequence diagram figure 3.2.3
 
 
 
@@ -325,21 +354,7 @@ To ensure real-time performance and high detection accuracy, the following compu
 
 4.3 TECHNOLOGIES USED
 The implementation involved a combination of modern open-source tools, frameworks, and libraries:
-Technology	Purpose
-YOLOv8
-&
-YOLO-NAS	Object detection model for PPE, bottle, and human classification
-Python	Core programming language
-OpenCV	Image processing and frame manipulation
-Roboflow	Dataset annotation and augmentation
-Streamlit	Simple interface/dashboard to view detections
-Technologies used table figure 4.3
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/62eada1c-ec89-42d5-a97b-4194b02bb119)
 
 Chapter 5
 User Manual
@@ -357,17 +372,22 @@ Once running, the interface will display:
 o	✅ “PPE Compliant”
 o	⚠️ “Fallen Bottle Detected!”
 o	❌ “Mask Missing – Worker”
- 
-User-interface figure 5.1.1
+![image](https://github.com/user-attachments/assets/92bd873b-4374-49c0-ade4-a6ff79005e2f)
+
+						User-interface figure 5.1.1
 Step 3: Viewing Detection Results
+
 •	Each detection type (PPE, bottle state).
+
 •	Alerts are also logged in a separate drive folder for review. 
- 
-PPE Detection figure 5.1.2
+ ![image](https://github.com/user-attachments/assets/e393cb6a-221c-4869-aff5-a4228a326141)
+
+						PPE Detection figure 5.1.2
 
 
- 
-Incomplete milk bottle figure 5.1.3
+ ![image](https://github.com/user-attachments/assets/93601f10-fea8-42f6-8a32-cae0ecd674cb)
+
+						Incomplete milk bottle figure 5.1.3
 
 
 Step 4: Stopping the System
@@ -380,13 +400,8 @@ Step 4: Stopping the System
 
 5.2 Installation Guide
 This section provides complete instructions to install the Smart-Eye Dairy system and its required dependencies.
-🖥 Minimum System Requirements:
-Requirement	Specification
-OS	Windows 10+, Linux (Ubuntu), macOS
-RAM	Minimum 8 GB
-GPU                    	NVIDIA GTX 1060 or better
-Disk Space	3 GB for models, logs, and video
-System requirements table figure 5.2
+![image](https://github.com/user-attachments/assets/c5095e48-685b-4321-9611-d7dc1885a1b8)
+
 🔧 Third-Party Tools & Libraries
 •	Python 3.10
 •	PyTorch
