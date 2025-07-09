@@ -255,7 +255,7 @@ Analysis and Design
 3.1.1 System Architecture
  ![image](https://github.com/user-attachments/assets/31089623-327e-41dc-96aa-c17bb0f57613)
 
-						System Architecture Figure 3.1
+<p align="center">System Architecture Figure 3.1</p>
 
 The Smart-Eye Dairy system is designed as a real-time computer vision platform composed of modular detection components that process video input and provide actionable alerts to supervisors. The system receives video feeds from cameras placed in production or store areas, processes the frames using trained deep learning models, and returns results to the user interface for monitoring.
 The architecture consists of the following core modules:
@@ -302,16 +302,16 @@ This section details the internal structure and interactions of the Smart-Eye Da
 3.2.1 Use Case Diagram
  ![image](https://github.com/user-attachments/assets/06862912-2f04-43df-9b52-19e1cb9e74ad)
 
-						Use case diagram figure 3.2.1
+<p align="center">Use case diagram figure 3.2.1</p>
 3.2.2 Class Diagram
  ![image](https://github.com/user-attachments/assets/aecaea36-5071-4860-bcab-be6886c9ca08)
 
-						Class diagram figure 3.2.2
+<p align="center">Class diagram figure 3.2.2</p>
 
 3.2.3 Sequence Diagrams
  ![image](https://github.com/user-attachments/assets/12c30871-3eab-4034-8ddf-78cc336a15e7)
 
-						Sequence diagram figure 3.2.3
+<p align="center">Sequence diagram figure 3.2.3</p>
 
 
 
@@ -374,7 +374,7 @@ o	⚠️ “Fallen Bottle Detected!”
 o	❌ “Mask Missing – Worker”
 ![image](https://github.com/user-attachments/assets/92bd873b-4374-49c0-ade4-a6ff79005e2f)
 
-						User-interface figure 5.1.1
+<p align="center">User-interface figure 5.1.1</p>
 Step 3: Viewing Detection Results
 
 •	Each detection type (PPE, bottle state).
@@ -382,12 +382,12 @@ Step 3: Viewing Detection Results
 •	Alerts are also logged in a separate drive folder for review. 
  ![image](https://github.com/user-attachments/assets/e393cb6a-221c-4869-aff5-a4228a326141)
 
-						PPE Detection figure 5.1.2
+<p align="center">PPE Detection figure 5.1.2</p>
 
 
  ![image](https://github.com/user-attachments/assets/93601f10-fea8-42f6-8a32-cae0ecd674cb)
 
-						Incomplete milk bottle figure 5.1.3
+<p align="center">Incomplete milk bottle figure 5.1.3</p>
 
 
 Step 4: Stopping the System
